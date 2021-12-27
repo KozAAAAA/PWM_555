@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6002)
-    (drawings 4)
+    (drawings 8)
     (tracks 0)
     (zones 0)
     (modules 10)
@@ -129,7 +129,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical (layer Front) (tedit 59FED5CC) (tstamp 61C35406)
-    (at 163.83 91.44 180)
+    (at 164.084 91.44 180)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /61C31C83)
@@ -276,7 +276,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer Front) (tedit 5AE5139B) (tstamp 61C353B0)
-    (at 163.83 105.41 90)
+    (at 164.084 105.4354 90)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /61C2A02A)
@@ -579,9 +579,13 @@
     )
   )
 
-  (gr_line (start 167.64 86.36) (end 138.43 86.36) (layer Edge.Cuts) (width 0.0254) (tstamp 61C5D560))
-  (gr_line (start 167.64 119.38) (end 167.64 86.36) (layer Edge.Cuts) (width 0.0254))
-  (gr_line (start 138.43 119.38) (end 167.64 119.38) (layer Edge.Cuts) (width 0.0254))
-  (gr_line (start 138.43 86.36) (end 138.43 119.38) (layer Edge.Cuts) (width 0.0254))
+  (gr_arc (start 139.7 87.63) (end 139.7 86.36) (angle -90) (layer Edge.Cuts) (width 0.0254))
+  (gr_arc (start 166.878 87.63) (end 168.148 87.63) (angle -90) (layer Edge.Cuts) (width 0.0254))
+  (gr_arc (start 139.7 118.11) (end 138.43 118.11) (angle -90) (layer Edge.Cuts) (width 0.0254))
+  (gr_arc (start 166.878 118.11) (end 166.878 119.38) (angle -90) (layer Edge.Cuts) (width 0.0254))
+  (gr_line (start 166.878 86.36) (end 139.7 86.36) (layer Edge.Cuts) (width 0.0254) (tstamp 61C5D560))
+  (gr_line (start 168.148 118.11) (end 168.148 87.63) (layer Edge.Cuts) (width 0.0254))
+  (gr_line (start 139.7 119.38) (end 166.878 119.38) (layer Edge.Cuts) (width 0.0254))
+  (gr_line (start 138.43 87.63) (end 138.43 118.11) (layer Edge.Cuts) (width 0.0254))
 
 )
